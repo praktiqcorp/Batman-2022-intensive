@@ -11,11 +11,15 @@
 <body>
     <header class="header">
         <!--Кнопка меню Бургер из ДЗ-->
-        <a class="burger__link">Burger</a>
+        <button class="burger">menu</button>
+
         <nav class="header__navigation navigation">
+            <!--Кнопка закрытия меню из ДЗ-->
+            <button class="navigation__close">close</button>
+
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a class="navigation__link">Главная</a>
+                    <a class="navigation__link navigation__link_active">Главная</a>
                 </li>
                 <li class="navigation__item">
                     <a class="navigation__link" href="video.html">Видео</a>
@@ -23,43 +27,40 @@
                 <li class="navigation__item">
                     <a class="navigation__link" href="foto.html">Фото</a>
                 </li>
-                <!--Кнопка закрытия меню из ДЗ-->
-                <li class="navigation__item">
-                    <a class="burgerclose__link">X</a>
-                </li>
             </ul>
             <p class="header__hashtag">#TheBatman</p>
 
             <ul class="header__social social">
                 <li class="social__item">
-                    <a href="" class="socal__link">fb</a>
+                    <a href="" class="social__link social__link_fb">#</a>
                 </li>
                 <li class="social__item">
-                    <a href="" class="socal__link">tw</a>
+                    <a href="" class="social__link social__link_tw">#</a>
                 </li>
                 <li class="social__item">
-                    <a href="" class="socal__link">in</a>
+                    <a href="" class="social__link social__link_in">#</a>
                 </li>
             </ul>
 
-            <div class="mute">
-                <input class="mute__checkbox" type="checkbox" id="mute">
-                <label for="mute" class="mute__label">mute</label>
-            </div>
         </nav>
+
+        <div class="mute">
+            <input class="mute__checkbox" type="checkbox" id="mute">
+            <label for="mute" class="mute__label">mute</label>
+        </div>
 
     </header>
 
-    <main class="main">
+    <main class="main main__index">
         <img src="img/logo.png" alt="Логотип к фильму Бэтмен" class="logo" width="329" height="235">
     </main>
 
     <footer class="footer">
         <ul class="footer__links">
-            <li><a href="#" class="footer__link"></a>Политика</li>
-            <li><a href="#" class="footer__link"></a>Условия</li>
-            <li><a href="#" class="footer__link"></a>Выбор</li>
-            <li><a href="#" class="footer__link"></a>Cookie</li>
+            <li><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+            <li><a href="#" class="footer__link">Условия эксплуатации</a></li>
+            <li><a href="#" class="footer__link">Выбор объявлений</a></li>
+            <li><a href="#" class="footer__link">Настройки файлов cookie</a></li>
         </ul>
         <p class="footer__copiright">© 2022 WBEI TM & © DC</p>
     </footer>
